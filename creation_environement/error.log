@@ -1,0 +1,46 @@
+2024/02/01 21:36:16 [warn] 25195#25195: server name "evaluation.nelly-datascientest.cloudns.be/" has suspicious symbols in /etc/nginx/conf.d/wordpress.conf:5
+2024/02/01 21:36:33 [warn] 25200#25200: server name "evaluation.nelly-datascientest.cloudns.be/" has suspicious symbols in /etc/nginx/conf.d/wordpress.conf:5
+2024/02/01 21:36:33 [warn] 25201#25201: server name "evaluation.nelly-datascientest.cloudns.be/" has suspicious symbols in /etc/nginx/conf.d/wordpress.conf:5
+2024/02/01 21:52:10 [crit] 25250#25250: *1 connect() to unix:/var/run/php/php7.4-fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 82.125.205.192, server: evaluation.nelly-datascientest.cloudns.be, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.4-fpm.sock:", host: "evaluation.nelly-datascientest.cloudns.be"
+2024/02/01 22:03:41 [crit] 25303#25303: *1 connect() to unix:/var/run/php/php7.4-fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 82.125.205.192, server: evaluation.nelly-datascientest.cloudns.be, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.4-fpm.sock:", host: "evaluation.nelly-datascientest.cloudns.be"
+2024/02/01 22:03:50 [crit] 25303#25303: *3 connect() to unix:/var/run/php/php7.4-fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 82.125.205.192, server: evaluation.nelly-datascientest.cloudns.be, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.4-fpm.sock:", host: "evaluation.nelly-datascientest.cloudns.be"
+2024/02/01 22:03:54 [crit] 25303#25303: *5 connect() to unix:/var/run/php/php7.4-fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 82.125.205.192, server: evaluation.nelly-datascientest.cloudns.be, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.4-fpm.sock:", host: "evaluation.nelly-datascientest.cloudns.be"
+2024/02/01 22:03:55 [crit] 25303#25303: *5 connect() to unix:/var/run/php/php7.4-fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 82.125.205.192, server: evaluation.nelly-datascientest.cloudns.be, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.4-fpm.sock:", host: "evaluation.nelly-datascientest.cloudns.be"
+2024/02/01 22:06:08 [crit] 25303#25303: *8 connect() to unix:/var/run/php/php7.4-fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 82.125.205.192, server: evaluation.nelly-datascientest.cloudns.be, request: "GET /wp-admin/ HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.4-fpm.sock:", host: "evaluation.nelly-datascientest.cloudns.be"
+2024/02/01 22:06:18 [crit] 25303#25303: *10 connect() to unix:/var/run/php/php7.4-fpm.sock failed (2: No such file or directory) while connecting to upstream, client: 82.125.205.192, server: evaluation.nelly-datascientest.cloudns.be, request: "GET /wp-admin/install.php HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.4-fpm.sock:", host: "evaluation.nelly-datascientest.cloudns.be"
+2024/02/01 22:08:13 [error] 25303#25303: *12 directory index of "/var/www/html/wordpress/" is forbidden, client: 221.12.166.123, server: _, request: "GET / HTTP/1.1", host: "54.74.140.226:80"
+2024/02/01 22:17:27 [error] 25303#25303: *13 directory index of "/var/www/html/wordpress/" is forbidden, client: 146.19.24.23, server: _, request: "GET / HTTP/1.1", host: "54.74.140.226:80"
+2024/02/01 22:27:02 [error] 25303#25303: *14 directory index of "/var/www/html/wordpress/" is forbidden, client: 102.129.232.53, server: _, request: "HEAD / HTTP/1.1", host: "54.74.140.226"
+2024/02/01 22:35:37 [warn] 25936#25936: conflicting server name "evaluation.nelly-datascientest.cloudns.be" on 0.0.0.0:80, ignored
+2024/02/01 22:35:37 [warn] 25937#25937: conflicting server name "evaluation.nelly-datascientest.cloudns.be" on 0.0.0.0:80, ignored
+2024/02/01 22:39:09 [error] 25939#25939: *18 FastCGI sent in stderr: "PHP message: WordPress database error DELETE command denied to user 'wordpress'@'localhost' for table `wordpress`.`wp_options` for query DELETE FROM wp_options WHERE option_name REGEXP '^rss_[0-9a-f]{32}(_ts)?$' made by wp_install, populate_optionsPHP message: WordPress database error DELETE command denied to user 'wordpress'@'localhost' for table `wordpress`.`wp_options` for query DELETE a, b FROM wp_options a, wp_options b
+			WHERE a.option_name LIKE '\\_transient\\_%'
+			AND a.option_name NOT LIKE '\\_transient\\_timeout\\_%'
+			AND b.option_name = CONCAT( '_transient_timeout_', SUBSTRING( a.option_name, 12 ) )
+			AND b.option_value < 1706827148 made by wp_install, populate_options, delete_expired_transientsPHP message: WordPress database error DELETE command denied to user 'wordpress'@'localhost' for table `wordpress`.`wp_options` for query DELETE a, b FROM wp_options a, wp_options b
+				WHERE a.option_name LIKE '\\_site\\_transient\\_%'
+				AND a.option_name NOT LIKE '\\_site\\_transient\\_timeout\\_%'
+				AND b.option_name = CONCAT( '_site_transient_timeout_', SUBSTRING( a.option_name, 17 ) )
+				AND b.option_value < 1706827148 made by wp_install, populate_options, delete_expired_transients" while reading response header from upstream, client: 82.125.205.192, server: evaluation.nelly-datascientest.cloudns.be, request: "POST /wp-admin/install.php?step=2 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php8.0-fpm.sock:", host: "evaluation.nelly-datascientest.cloudns.be", referrer: "http://evaluation.nelly-datascientest.cloudns.be/wp-admin/install.php?step=1"
+2024/02/01 23:00:14 [warn] 25982#25982: conflicting server name "evaluation.nelly-datascientest.cloudns.be" on 0.0.0.0:80, ignored
+2024/02/01 23:04:42 [warn] 37#37: conflicting server name "evaluation.nelly-datascientest.cloudns.be" on 0.0.0.0:80, ignored
+2024/02/01 23:04:43 [warn] 62#62: conflicting server name "evaluation.nelly-datascientest.cloudns.be" on 0.0.0.0:80, ignored
+2024/02/01 23:07:29 [warn] 267#267: conflicting server name "evaluation.nelly-datascientest.cloudns.be" on 0.0.0.0:80, ignored
+2024/02/01 23:18:39 [warn] 388#388: conflicting server name "evaluation.nelly-datascientest.cloudns.be" on 0.0.0.0:80, ignored
+2024/02/03 18:46:47 [warn] 38#38: conflicting server name "evaluation.nelly-datascientest.cloudns.be" on 0.0.0.0:80, ignored
+2024/02/03 18:46:47 [warn] 74#74: conflicting server name "evaluation.nelly-datascientest.cloudns.be" on 0.0.0.0:80, ignored
+2024/02/03 18:48:07 [warn] 360#360: conflicting server name "evaluation.nelly-datascientest.cloudns.be" on 0.0.0.0:80, ignored
+2024/02/03 18:48:57 [warn] 364#364: conflicting server name "evaluation.nelly-datascientest.cloudns.be" on 0.0.0.0:80, ignored
+2024/02/03 18:48:57 [notice] 364#364: signal process started
+2024/02/03 18:49:05 [warn] 367#367: conflicting server name "evaluation.nelly-datascientest.cloudns.be" on 0.0.0.0:80, ignored
+2024/02/03 18:49:05 [notice] 367#367: signal process started
+2024/02/03 18:49:43 [warn] 373#373: conflicting server name "evaluation.nelly-datascientest.cloudns.be" on 0.0.0.0:80, ignored
+2024/02/03 18:49:44 [warn] 376#376: conflicting server name "evaluation.nelly-datascientest.cloudns.be" on 0.0.0.0:80, ignored
+2024/02/03 18:49:44 [notice] 376#376: signal process started
+2024/02/03 18:49:50 [warn] 379#379: conflicting server name "evaluation.nelly-datascientest.cloudns.be" on 0.0.0.0:80, ignored
+2024/02/03 18:49:50 [notice] 379#379: signal process started
+2024/02/03 18:49:53 [warn] 382#382: conflicting server name "evaluation.nelly-datascientest.cloudns.be" on 0.0.0.0:80, ignored
+2024/02/03 18:49:53 [notice] 382#382: signal process started
+2024/02/03 18:50:31 [warn] 385#385: conflicting server name "evaluation.nelly-datascientest.cloudns.be" on 0.0.0.0:80, ignored
+2024/02/03 18:50:31 [notice] 385#385: signal process started
+2024/02/03 18:51:10 [crit] 386#386: *25 SSL_do_handshake() failed (SSL: error:141CF06C:SSL routines:tls_parse_ctos_key_share:bad key share) while SSL handshaking, client: 139.59.182.142, server: 0.0.0.0:443

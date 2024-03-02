@@ -1,0 +1,4 @@
+[Sat Feb 03 21:49:38.398443 2024] [mpm_event:notice] [pid 820:tid 140295363251264] AH00489: Apache/2.4.41 (Ubuntu) configured -- resuming normal operations
+[Sat Feb 03 21:49:38.398580 2024] [core:notice] [pid 820:tid 140295363251264] AH00094: Command line: '/usr/sbin/apache2'
+[Tue Feb 13 12:54:58.333884 2024] [mpm_event:notice] [pid 36:tid 140380563680320] AH00489: Apache/2.4.41 (Ubuntu) configured -- resuming normal operations
+[Tue Feb 13 12:54:58.337768 2024] [core:notice] [pid 36:tid 140380563680320] AH00094: Command line: '/usr/sbin/apache2'
